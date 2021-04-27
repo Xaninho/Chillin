@@ -1,10 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Button} from 'react-native';
 
-export default LibraryScreen = () => {
+export default LibraryScreen = navigation => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Library!</Text>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#252525',
+      }}>
+      <Button
+        title="Go to Music"
+        onPress={() => navigation.navigate('Music')}
+      />
     </View>
   );
 };

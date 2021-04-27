@@ -1,16 +1,16 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default RadioScreen = () => {
+export default FavoritesScreen = () => {
   return (
     <View
       style={{
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#252525',
+        backgroundColor: '#151515',
       }}>
-      <Text>Radio!</Text>
+      <Text>Music! Yay!</Text>
     </View>
   );
 };
