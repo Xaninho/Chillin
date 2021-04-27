@@ -1,8 +1,13 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import BottomNav from './components/BottomNav';
 
-const App = () => {
-  return <Text>We'll bang, okay?</Text>;
-};
+function App() {
+  return (
+    <NavigationContainer>
+      <BottomNav />
+    </NavigationContainer>
+  );
+}
 
 export default App;
