@@ -1,8 +1,25 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
-const App = () => {
-  return <Text>We'll bang, okay?</Text>;
+import BottomTabs from './components/BottomTabs';
+import DrawerContent from './components/DrawerContent';
+
+import ProfileScreen from './screens/ProfileScreen';
+import SettingsScreen from './screens/SettingsScreen';
+import {StatusBar} from 'react-native';
+
+const Drawer = createDrawerNavigator();
+
+export default App = () => {
+  return (
+    <NavigationContainer>
+      <StatusBar translucent backgroundColor="transparent" />
+      <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
+        <Drawer.Screen name="HomeDrawer" component={BottomTabs} />
+        <Drawer.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
 };
-
-export default App;
