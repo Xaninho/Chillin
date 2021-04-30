@@ -1,16 +1,18 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {useTheme} from 'react-native-paper';
 
 export default RadioScreen = () => {
+  const {colors} = useTheme();
   return (
     <View
       style={{
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#252525',
+        backgroundColor: colors.backgroundDarker,
       }}>
-      <Text>Radio!</Text>
+      <Text style={{color: colors.whiteSubtle}}>Radio!</Text>
     </View>
   );
 };
