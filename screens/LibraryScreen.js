@@ -13,9 +13,43 @@ export default LibraryScreen = ({navigation}) => {
         backgroundColor: colors.backgroundDarker,
       }}>
       <Button
-        title="Go to Music"
+        title="Morning Coffee"
         onPress={() => {
-          navigation.navigate('Music');
+          navigation.navigate('Music', {
+            playlist: 'morning_coffee',
+          });
+        }}
+      />
+      <Button
+        title="Nocturnal Vibes"
+        onPress={() => {
+          navigation.navigate('Music', {
+            playlist: 'nocturnal_vibes',
+          });
+        }}
+      />
+      <Button
+        title="Oriental World"
+        onPress={() => {
+          navigation.navigate('Music', {
+            playlist: 'oriental_world',
+          });
+        }}
+      />
+      <Button
+        title="Rainy Days"
+        onPress={() => {
+          navigation.navigate('Music', {
+            playlist: 'rainy_days',
+          });
+        }}
+      />
+      <Button
+        title="Gentle Focus"
+        onPress={() => {
+          navigation.navigate('Music', {
+            playlist: 'gentle_focus',
+          });
         }}
       />
     </View>

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Controlla",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2FIdealism%20-%20Controlla.mp3?alt=media&token=fcc11d1e-768e-431f-bd6f-9fecb2f26a24",
+    "title": "Controlla",
+    "album": "Rainy Days",
+    "artist": "Idealism",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 108
+  },
+  {
+    "id": "Rain",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2FLeaf%20Beach%20-%20Rain.mp3?alt=media&token=1ef3847d-10e5-44a6-aa92-bbdf7b0835b8",
+    "title": "Rain",
+    "album": "Rainy Days",
+    "artist": "Leaf Beach",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 90
+  },
+  {
+    "id": "oh look, it's raining again",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2FLost%20Son%20-%20oh%20look%2C%20its%20raining%20again.mp3?alt=media&token=de7e404a-4ac4-4333-a059-82cfa377b510",
+    "title": "oh look, it's raining again",
+    "album": "Rainy Days",
+    "artist": "Lost Son",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 135
+  },
+  {
+    "id": "im trying",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2Faimless%20-%20im%20trying.mp3?alt=media&token=72e1dd04-671e-43e5-8221-a3624190d30b",
+    "title": "im trying",
+    "album": "Rainy Days",
+    "artist": "aimless",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 98
+  },
+  {
+    "id": "rain on the beach",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2Fcavanaugh%20-%20rain%20on%20the%20beach.mp3?alt=media&token=ce6f0619-2aee-415e-b19e-08d7c06958d5",
+    "title": "rain on the beach",
+    "album": "Rainy Days",
+    "artist": "cavanaugh",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 124
+  },
+  {
+    "id": "kuma",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2Fmt.%20fujitive%20-%20kuma.mp3?alt=media&token=5f9ec3c8-66e2-45cb-a2e6-a299bb092963",
+    "title": "kuma",
+    "album": "Rainy Days",
+    "artist": "mt. fujitive",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 172
+  },
+  {
+    "id": "moon",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Frain%2Fmt.%20fujitive%20-%20moon.mp3?alt=media&token=5bf41a0b-7f0d-4263-8dc6-aaa55cb78545",
+    "title": "moon",
+    "album": "Rainy Days",
+    "artist": "mt. fujitive",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Frain.jpg?alt=media&token=19ce8602-3acb-4366-a506-98ebe5507814",
+    "genre": "Lo-Fi",
+    "duration": 115
+  }
+]
