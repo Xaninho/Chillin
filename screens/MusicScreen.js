@@ -4,10 +4,38 @@ import {useTheme} from 'react-native-paper';
 import TrackPlayer, {usePlaybackState} from 'react-native-track-player';
 
 import Player from '../components/Player';
-import playlistData from '../music/morning_coffee.json';
+import morning_coffee from '../music/morning_coffee.json';
+import nocturnal_vibes from '../music/nocturnal_vibes.json';
+import oriental_world from '../music/oriental_world.json';
+import rainy_days from '../music/rainy_days.json';
+import gentle_focus from '../music/gentle_focus.json';
 
-export default MusicScreen = () => {
+export default MusicScreen = ({route}) => {
   const playbackState = usePlaybackState();
+
+  const {playlist} = route.params;
+  let playlistData;
+
+  switch (playlist) {
+    case 'morning_coffee':
+      playlistData = morning_coffee;
+      break;
+    case 'nocturnal_vibes':
+      playlistData = nocturnal_vibes;
+      break;
+    case 'oriental_world':
+      playlistData = oriental_world;
+      break;
+    case 'rainy_days':
+      playlistData = rainy_days;
+      break;
+    case 'gentle_focus':
+      playlistData = gentle_focus;
+      break;
+
+    default:
+      playlistData = morning_coffee;
+  }
 
   useEffect(() => {
     setup();

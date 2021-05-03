@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Deep",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2FAxian%20-%20Deep.mp3?alt=media&token=f286e2cd-fb22-4aa2-8569-72e36162fdd6",
+    "title": "Deep",
+    "album": "Gentle Focus",
+    "artist": "Axian",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 99
+  },
+  {
+    "id": "Dreams of Summer",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2FJonas%20Langer%20-%20Dreams%20of%20Summer.mp3?alt=media&token=50d3984a-51ba-4b63-b16a-0db4845052d0",
+    "title": "Dreams of Summer",
+    "album": "Gentle Focus",
+    "artist": "Jonas Langer",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 110
+  },
+  {
+    "id": "Im Going",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2FMedda%20-%20Im%20Going.mp3?alt=media&token=e2de8b16-7b5e-4389-8df3-f2bfd6018a95",
+    "title": "Im Going",
+    "album": "Gentle Focus",
+    "artist": "Medda",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 109
+  },
+  {
+    "id": "may",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2Faebleo%20-%20may.mp3?alt=media&token=f42166c9-6708-42f2-bb74-24065d2bed43",
+    "title": "may",
+    "album": "Gentle Focus",
+    "artist": "aebleo",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 70
+  },
+  {
+    "id": "beware j",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2Fais.hill%20-%20beware%20j.mp3?alt=media&token=b564f846-d875-4a27-8fe5-5c7ad05feae6",
+    "title": "beware j",
+    "album": "Gentle Focus",
+    "artist": "ais.hill",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 147
+  },
+  {
+    "id": "first choice",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2Fkavv%20-%20first%20choice.mp3?alt=media&token=29c5731d-153c-4fcf-b171-0fdd4aa25d2e",
+    "title": "first choice",
+    "album": "Gentle Focus",
+    "artist": "kavv",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 101
+  },
+  {
+    "id": "Milano",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Ffocus%2F%C3%98DYSSEE%20-%20Milano.mp3?alt=media&token=f8864f04-7075-4443-8801-16e1958bd69d",
+    "title": "Milano",
+    "album": "Gentle Focus",
+    "artist": "ØDYSSEE",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Ffocus.jpg?alt=media&token=010290ed-e13f-49b7-b3ef-bc28c1eef67a",
+    "genre": "Lo-Fi",
+    "duration": 117
+  }
+]

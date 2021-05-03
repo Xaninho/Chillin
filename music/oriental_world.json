@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Amore",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2FHuey%20Daze%20-%20Amore.mp3?alt=media&token=ae3aa3ca-ac18-47cf-9ea4-e9f0f9ea57b0",
+    "title": "Amore",
+    "album": "Oriental World",
+    "artist": "Huey Daze",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 130
+  },
+  {
+    "id": "Journey",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2FTenno%20-%20Journey.mp3?alt=media&token=52d5f557-8410-4fa8-a495-a2cfcebf298b",
+    "title": "Journey",
+    "album": "Oriental World",
+    "artist": "Tenno",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 169
+  },
+  {
+    "id": "The Moon In Autumn",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2FThe%20Ugly%20-%20The%20Moon%20In%20Autumn.mp3?alt=media&token=38767678-f808-4f63-a17e-d747db6fc5fb",
+    "title": "The Moon In Autumn",
+    "album": "Oriental World",
+    "artist": "The Ugly",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 161
+  },
+  {
+    "id": "Itomori",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2FVindu%20-%20Itomori.mp3?alt=media&token=cd9319d4-5ee0-4186-a3b8-d1b1eef54b8e",
+    "title": "Itomori",
+    "album": "Oriental World",
+    "artist": "Vindu",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 208
+  },
+  {
+    "id": "Flowers at Midnight",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2Fasokah%20-%20Flowers%20at%20Midnight.mp3?alt=media&token=257a9379-4e3c-499e-b5fd-c7b86477d422",
+    "title": "Flowers at Midnight",
+    "album": "Oriental World",
+    "artist": "asokah",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 165
+  },
+  {
+    "id": "you're still on my mind",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2Fblackguyrandy%20-%20you'%20re%20still%20on%20my%20mind.mp3?alt=media&token=c896ac07-db9d-47f0-8ac4-86a3a2658b28",
+    "title": "you're still on my mind",
+    "album": "Oriental World",
+    "artist": "blackguyrandy",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 316
+  },
+  {
+    "id": "hatsukoi",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Foriental%2Flilac%20-%20hatsukoi.mp3?alt=media&token=3a8bd39d-e940-414a-9d3d-e7fef6922a01",
+    "title": "hatsukoi",
+    "album": "Oriental World",
+    "artist": "lilac",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Foriental.jpg?alt=media&token=437065af-cb14-4bb8-8492-3428f5784625",
+    "genre": "Lo-Fi",
+    "duration": 146
+  }
+]

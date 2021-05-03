@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Circle",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2FH.1%20-%20Circle.mp3?alt=media&token=edef302b-98c6-421a-bc68-7755ad034c65",
+    "title": "Circle",
+    "album": "Nocturnal Vibes",
+    "artist": "H.1",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 113
+  },
+  {
+    "id": "Lunar Drive",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2FMondo%20Loops%20-%20Lunar%20Drive.mp3?alt=media&token=cedd7632-5f83-4440-ba44-7960ab4660ff",
+    "title": "Lunar Drive",
+    "album": "Nocturnal Vibes",
+    "artist": "Mondo Loops",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 189
+  },
+  {
+    "id": "Cuddlin",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2FPandrezz%20-%20Cuddlin.mp3?alt=media&token=995ae6e8-8f7f-4972-ae4d-6a4100bf18cc",
+    "title": "Cuddlin",
+    "album": "Nocturnal Vibes",
+    "artist": "Pandrezz",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 177
+  },
+  {
+    "id": "Snowman",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2FWYS%20-%20Snowman.mp3?alt=media&token=c5492d2d-cb91-4e27-a4c8-28f5ab9ae523",
+    "title": "Snowman",
+    "album": "Nocturnal Vibes",
+    "artist": "WYS",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 195
+  },
+  {
+    "id": "wool gloves",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2Fimagiro%20-%20wool%20gloves.mp3?alt=media&token=c6a3f133-e668-48ae-a21d-f360bea1a82d",
+    "title": "wool gloves",
+    "album": "Nocturnal Vibes",
+    "artist": "imagiro",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 121
+  },
+  {
+    "id": "dream of her",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2Fkudasai%20-%20dream%20of%20her.mp3?alt=media&token=3a35318e-c457-44a3-a8dd-e9f92ced2512",
+    "title": "dream of her",
+    "album": "Nocturnal Vibes",
+    "artist": "kudasai",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 164
+  },
+  {
+    "id": "breeze",
+    "url": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/musics%2Fnocturnal%2Fmvdb%20-%20breeze.mp3?alt=media&token=594f48f4-5d61-4c33-b0c0-2f15f703f1fa",
+    "title": "breeze",
+    "album": "Nocturnal Vibes",
+    "artist": "mvdb",
+    "artwork": "https://firebasestorage.googleapis.com/v0/b/chillin-radiowave.appspot.com/o/images%2Fnight.jpg?alt=media&token=d1024f5a-211c-4a75-9726-e01c0cc6ca9f",
+    "genre": "Lo-Fi",
+    "duration": 95
+  }
+]
