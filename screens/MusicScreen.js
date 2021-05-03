@@ -1,99 +1,113 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';
 import {useTheme} from 'react-native-paper';
-import TrackPlayer from 'react-native-track-player';
+import TrackPlayer, {usePlaybackState} from 'react-native-track-player';
 
-const tracks = [
-  {
-    id: 1,
-    url: require('../music/blues.wav'),
-    title: 'Blues Beat',
-  },
-  {
-    id: 2,
-    url: require('../music/tracks_country.mp3'),
-    title: 'Blues Beat',
-  },
-];
-
-TrackPlayer.updateOptions({
-  stopWithApp: false,
-  capabilities: [TrackPlayer.CAPABILITY_PLAY, TrackPlayer.CAPABILITY_PAUSE],
-  compactCapabilities: [
-    TrackPlayer.CAPABILITY_PLAY,
-    TrackPlayer.CAPABILITY_PAUSE,
-  ],
-});
+import Player from '../components/Player';
+import playlistData from '../music/morning_coffee.json';
 
 export default MusicScreen = () => {
-  const setUpTrackPlayer = async () => {
-    try {
-      await TrackPlayer.setupPlayer();
-      await TrackPlayer.add(tracks);
-      console.log('Tracks added');
-    } catch (e) {
-      console.log(e);
-    }
-  };
+  const playbackState = usePlaybackState();
 
   useEffect(() => {
-    setUpTrackPlayer();
-
-    return () => TrackPlayer.destroy();
+    setup();
   }, []);
 
-  const colors = useTheme();
+  async function setup() {
+    await TrackPlayer.setupPlayer({});
+    await TrackPlayer.updateOptions({
+      stopWithApp: true,
+      capabilities: [
+        TrackPlayer.CAPABILITY_PLAY,
+        TrackPlayer.CAPABILITY_PAUSE,
+        TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
+        TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
+        TrackPlayer.CAPABILITY_STOP,
+      ],
+      compactCapabilities: [
+        TrackPlayer.CAPABILITY_PLAY,
+        TrackPlayer.CAPABILITY_PAUSE,
+        TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
+        TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
+      ],
+    });
+  }
+
+  async function togglePlayback() {
+    const currentTrack = await TrackPlayer.getCurrentTrack();
+    if (currentTrack == null) {
+      await TrackPlayer.reset();
+      await TrackPlayer.add(playlistData);
+      await TrackPlayer.play();
+    } else {
+      if (playbackState === TrackPlayer.STATE_PAUSED) {
+        await TrackPlayer.play();
+      } else {
+        await TrackPlayer.pause();
+      }
+    }
+  }
 
   return (
     <View style={styles.container}>
-      <View style={styles.row}>
-        <TouchableOpacity
-          style={styles.btn}
-          onPress={() => TrackPlayer.pause()}>
-          <Text style={styles.text}>Pause</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.btn} onPress={() => TrackPlayer.play()}>
-          <Text style={styles.text}>Play</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.row}>
-        <TouchableOpacity
-          style={styles.btn}
-          onPress={() => TrackPlayer.skipToPrevious()}>
-          <Text style={styles.text}>Prev</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.btn}
-          onPress={() => TrackPlayer.skipToNext()}>
-          <Text style={styles.text}>Next</Text>
-        </TouchableOpacity>
-      </View>
+      <Text style={styles.description}>
+        We'll be inserting a playlist into the library loaded from
+        `playlist.json`. We'll also be using the `ProgressComponent` which
+        allows us to track playback time.
+      </Text>
+      <Player
+        onNext={skipToNext}
+        style={styles.player}
+        onPrevious={skipToPrevious}
+        onTogglePlayback={togglePlayback}
+      />
+      <Text style={styles.state}>{getStateName(playbackState)}</Text>
     </View>
   );
 };
 
+function getStateName(state) {
+  switch (state) {
+    case TrackPlayer.STATE_NONE:
+      return 'None';
+    case TrackPlayer.STATE_PLAYING:
+      return 'Playing';
+    case TrackPlayer.STATE_PAUSED:
+      return 'Paused';
+    case TrackPlayer.STATE_STOPPED:
+      return 'Stopped';
+    case TrackPlayer.STATE_BUFFERING:
+      return 'Buffering';
+  }
+}
+
+async function skipToNext() {
+  try {
+    await TrackPlayer.skipToNext();
+  } catch (_) {}
+}
+
+async function skipToPrevious() {
+  try {
+    await TrackPlayer.skipToPrevious();
+  } catch (_) {}
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    backgroundColor: '#F5FCFF',
   },
-  btn: {
-    backgroundColor: '#ff0044',
-    padding: 15,
-    borderRadius: 10,
-    margin: 10,
-    width: 160,
-  },
-  text: {
-    fontSize: 30,
-    color: 'white',
+  description: {
+    width: '80%',
+    marginTop: 20,
     textAlign: 'center',
   },
-  row: {
-    flexDirection: 'row',
-    marginBottom: 20,
+  player: {
+    marginTop: 40,
+  },
+  state: {
+    marginTop: 20,
   },
 });
