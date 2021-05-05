@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';
+import {StyleSheet, View, TouchableOpacity, Text, Button} from 'react-native';
 import {useTheme} from 'react-native-paper';
 import TrackPlayer, {usePlaybackState} from 'react-native-track-player';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
+import {insertFavorite} from '../database/allSchemas';
 import Player from '../components/Player';
 import morning_coffee from '../music/morning_coffee.json';
 import nocturnal_vibes from '../music/nocturnal_vibes.json';
