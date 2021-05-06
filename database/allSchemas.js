@@ -5,7 +5,7 @@ export const FavoritesSchema = {
   name: FAVORITES_SCHEMA,
   primaryKey: 'id',
   properties: {
-    id: {type: 'int', indexed: true},
+    id: {type: 'string', indexed: true},
     songName: 'string',
     songArtist: 'string',
     songArtUrl: 'string',
@@ -39,7 +39,7 @@ export const deleteFavorite = favoriteId =>
       .then(realm => {
         realm.write(() => {
           let deletingFavorite = realm.objectForPrimaryKey(
-            FavoritesSchema,
+            FAVORITES_SCHEMA,
             favoriteId,
           );
           realm.delete(deletingFavorite);
@@ -55,6 +55,27 @@ export const queryAllFavorites = () =>
       .then(realm => {
         let allFavorites = realm.objects(FAVORITES_SCHEMA);
         resolve(allFavorites);
+      })
+      .catch(error => reject(error));
+  });
+
+export const verifyFavorite = favoriteId =>
+  new Promise((resolve, reject) => {
+    Realm.open(databaseOptions)
+      .then(realm => {
+        try {
+          const findObject = realm.objectForPrimaryKey(
+            FAVORITES_SCHEMA,
+            favoriteId,
+          );
+          if (typeof findObject === 'undefined') {
+            resolve(false);
+          } else {
+            resolve(true);
+          }
+        } catch (error) {
+          console.error(error);
+        }
       })
       .catch(error => reject(error));
   });
