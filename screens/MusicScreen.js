@@ -3,6 +3,8 @@ import {StyleSheet, View, TouchableOpacity, Text, Button} from 'react-native';
 import {useTheme} from 'react-native-paper';
 import TrackPlayer, {usePlaybackState} from 'react-native-track-player';
 import Ionicon from 'react-native-vector-icons/Ionicons';
+import {useIsFocused} from '@react-navigation/native';
+import { useSelector, useDispatch } from 'react-redux';
 
 import {insertFavorite} from '../database/allSchemas';
 import Player from '../components/Player';
@@ -14,6 +16,10 @@ import gentle_focus from '../music/gentle_focus.json';
 
 export default MusicScreen = ({route}) => {
   const playbackState = usePlaybackState();
+  const isFocused = useIsFocused();
+
+  const trackState = useSelector(state => state.trackState.value);
+  const dispatch = useDispatch;
 
   const {playlist} = route.params;
   let playlistData;
@@ -42,6 +48,14 @@ export default MusicScreen = ({route}) => {
   useEffect(() => {
     setup();
   }, []);
+
+  useEffect(() => {
+    console.log(trackState);
+    if (isFocused == true) {
+      console.log('--------------------------------------------------------');
+      console.log(trackState);
+    }
+  }, [isFocused]);
 
   async function setup() {
     await TrackPlayer.setupPlayer({});
