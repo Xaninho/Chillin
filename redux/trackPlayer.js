@@ -7,7 +7,7 @@ export const trackPlayerSlice = createSlice({
   },
   reducers: {
     changeTrackPlayerState: (state, trackPlayerState) => {
-        state.value += trackPlayerState.payload;
+        state.value = trackPlayerState.payload;
     }
   }
 });

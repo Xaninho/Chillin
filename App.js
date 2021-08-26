@@ -9,6 +9,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import {StatusBar} from 'react-native';
 
+
 const Drawer = createDrawerNavigator();
 
 export default App = () => {

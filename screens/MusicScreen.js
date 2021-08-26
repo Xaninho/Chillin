@@ -5,6 +5,8 @@ import TrackPlayer, {usePlaybackState} from 'react-native-track-player';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import {useIsFocused} from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
+import store from '../redux/store';
+import { changeTrackPlayerState } from '../redux/trackPlayer';
 
 import {insertFavorite} from '../database/allSchemas';
 import Player from '../components/Player';
@@ -46,18 +48,18 @@ export default MusicScreen = ({route}) => {
   }
 
   useEffect(() => {
-    setup();
+    setupMusic();
   }, []);
 
   useEffect(() => {
     console.log(trackState);
     if (isFocused == true) {
-      console.log('--------------------------------------------------------');
-      console.log(trackState);
+      console.log('State: ' + trackState);
     }
   }, [isFocused]);
 
-  async function setup() {
+  async function setupMusic() {
+    store.dispatch(changeTrackPlayerState('Music'));
     await TrackPlayer.setupPlayer({});
     await TrackPlayer.updateOptions({
       stopWithApp: true,

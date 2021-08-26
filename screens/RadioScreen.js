@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import store from '../redux/store';
 import { connect } from 'react-redux';
 import {View, Button, Text} from 'react-native';
 import TrackPlayer from 'react-native-track-player';
@@ -12,7 +13,6 @@ const RadioScreen = () => {
   const isFocused = useIsFocused();
 
   const trackState = useSelector(state => state.trackState.value);
-  const dispatch = useDispatch;
 
  /* useEffect(() => {
     if (isFocused == true) {
@@ -32,7 +32,8 @@ const RadioScreen = () => {
   }
 
   async function setupRadio() {
-    dispatch(changeTrackPlayerState('Radio'));
+    store.dispatch(changeTrackPlayerState('Radio'));
+    
     TrackPlayer.setupPlayer().then(async () => {
       await TrackPlayer.add({
         id: 'radio',
@@ -42,15 +43,18 @@ const RadioScreen = () => {
         artwork:
           'https://i.pinimg.com/originals/ee/c9/cf/eec9cf46d05f356bc4bacea5ac2344e9.jpg',
       });
+      await TrackPlayer.updateOptions({
+        stopWithApp: true,
+        capabilities: [TrackPlayer.CAPABILITY_PLAY, TrackPlayer.CAPABILITY_STOP],
+        compactCapabilities: [
+          TrackPlayer.CAPABILITY_PLAY,
+          TrackPlayer.CAPABILITY_STOP,
+        ],
+      });
+      await TrackPlayer.play();
     });
-    await TrackPlayer.updateOptions({
-      stopWithApp: true,
-      capabilities: [RadioPlayer.CAPABILITY_PLAY, RadioPlayer.CAPABILITY_STOP],
-      compactCapabilities: [
-        RadioPlayer.CAPABILITY_PLAY,
-        RadioPlayer.CAPABILITY_STOP,
-      ],
-    });
+
+    
   }
 
   return (
@@ -82,4 +86,4 @@ const getStateName = (state) => {
   }
 }
 
-export default connect()(RadioScreen)
+export default connect()(RadioScreen);
